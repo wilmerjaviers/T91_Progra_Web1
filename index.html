@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-dark text-white">
+                <h2 class="mb-0 text-center">Conversor de Unidades</h2>
+            </div>
+            <div class="card-body bg-info">
+                <form id="conversionForm" novalidate>
+                    <!-- Kilómetros a Metros -->
+                    <div class="mb-4 bg-">
+                        <label class="form-label ">Kilómetros a Metros (1 km = 1000 m)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="kmInput" min="0" step="any" required>
+                            <span class="input-group-text ">km</span>
+                            <span class="input-group-text">=</span>
+                            <input type="number" class="form-control" id="mOutput" readonly>
+                            <span class="input-group-text">m</span>
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese un valor válido</div>
+                    </div>
+
+                    <!-- Metros a Centímetros -->
+                    <div class="mb-4">
+                        <label class="form-label">Metros a Centímetros (1 m = 100 cm)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="mInput" min="0" step="any" required>
+                            <span class="input-group-text">m</span>
+                            <span class="input-group-text">=</span>
+                            <input type="number" class="form-control" id="cmOutput" readonly>
+                            <span class="input-group-text">cm</span>
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese un valor válido</div>
+                    </div>
+
+                    <!-- Pies a Pulgadas -->
+                    <div class="mb-4">
+                        <label class="form-label">Pies a Pulgadas (1 ft = 12 pulg)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="ftInput" min="0" step="any" required>
+                            <span class="input-group-text">ft</span>
+                            <span class="input-group-text">=</span>
+                            <input type="number" class="form-control" id="inchOutput" readonly>
+                            <span class="input-group-text">pulg</span>
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese un valor válido</div>
+                    </div>
+
+                    <!-- Yardas a Pulgadas -->
+                    <div class="mb-4">
+                        <label class="form-label">Yardas a Pulgadas (1 yarda = 36 pulg)</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="ydInput" min="0" step="any" required>
+                            <span class="input-group-text">yd</span>
+                            <span class="input-group-text">=</span>
+                            <input type="number" class="form-control" id="inchYdOutput" readonly>
+                            <span class="input-group-text">pulg</span>
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese un valor válido</div>
+                    </div>
+
+                    <button type="reset" class="btn btn-dark">Limpiar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="conversor.js"></script>
+</body>
+</html>
