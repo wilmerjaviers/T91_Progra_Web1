@@ -1,0 +1,23 @@
+.user-avatar {
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+    transition: transform 0.2s;
+  }
+  
+  .user-avatar:hover {
+    transform: scale(1.1);
+    border-color: #0d6efd;
+  }
+  
+  .badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+  }
+  
+  .btn-group .btn {
+    transition: all 0.2s;
+  }
+  
+  .btn-group .btn:hover {
+    transform: translateY(-2px);
+  }
